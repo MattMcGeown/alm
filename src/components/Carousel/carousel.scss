@@ -1,0 +1,31 @@
+.section_carousel {
+	background-color: var(--light-purple);
+
+	.container {
+		position: relative;
+
+		.left_arrow {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			font-size: 4rem;
+		}
+
+		.right_arrow {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			font-size: 4rem;
+		}
+	}
+
+	.carousel_content {
+		display: flex;
+		width: 90%;
+		margin: 0 auto;
+
+		.carousel_item {
+			display: flex;
+		}
+	}
+}
