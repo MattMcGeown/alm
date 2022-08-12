@@ -3,9 +3,14 @@
 	max-width: 160rem;
 	margin: 0 auto;
 	padding: 4rem 0;
+
+	@media (max-width: 1600px) {
+		padding: 4rem 2rem;
+	}
 	@media (max-width: 568px) {
 		padding: 2rem 1rem;
 	}
+	overflow: hidden;
 }
 
 .btn {
@@ -24,4 +29,8 @@ img {
 
 section {
 	padding: 6rem 0;
+}
+
+.section_title {
+	text-align: center;
 }
