@@ -1,8 +1,9 @@
 // SCSS Imports
 import './header.scss';
 
-// Image Imports
-import { headerImages } from '../../images';
+// Component Imports
+import { images } from '../../images';
+import { links } from '../../data/Links';
 
 const Header = () => {
 	return (
@@ -12,14 +13,14 @@ const Header = () => {
 			</div>
 			<div className='container'>
 				<div className='header_content'>
-					<img className='header_logo' src={headerImages.logo} alt='' />
+					<img className='header_logo' src={images.logo} alt='' />
 					<h2>Improve your aim now</h2>
 					<div className='store_btn_wrap'>
-						<a href='#'>
-							<img src={headerImages.gbadge} alt='' />
+						<a href={links.googleStore}>
+							<img src={images.gbadge} alt='' />
 						</a>
-						<a href='#'>
-							<img src={headerImages.abadge} alt='' />
+						<a href={links.appleStore}>
+							<img src={images.abadge} alt='' />
 						</a>
 					</div>
 				</div>
