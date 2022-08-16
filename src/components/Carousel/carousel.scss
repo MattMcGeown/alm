@@ -46,20 +46,23 @@
 		justify-content: center;
 		// pointer-events: none;
 
-		img {
-			width: 80rem;
+		img,
+		iframe {
 			border-radius: 0.8rem;
+			width: 80rem;
 			-webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
 			-moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
 			box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
 		}
 
 		.carousel_item_info {
-			width: 40rem;
-			margin-left: 2rem;
+			width: 60rem;
+			margin-left: 4rem;
+			text-align: justify;
 
 			h2 {
 				text-transform: uppercase;
+				text-align: left;
 			}
 		}
 	}
