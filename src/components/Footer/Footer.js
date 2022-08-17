@@ -3,7 +3,10 @@ import './footer.scss';
 
 // Component Imports
 import { images } from '../../images';
-import { links } from '../../data/Links';
+import { links, socialLinks } from '../../data/Links';
+import Signup from '../Signup/Signup';
+
+// Icon Imports
 
 const footer = ({ title }) => {
 	return (
@@ -17,6 +20,21 @@ const footer = ({ title }) => {
 					<a href={links.appleStore} target='_blank' rel='noopener noreferrer'>
 						<img src={images.abadge} alt='' />
 					</a>
+				</div>
+				<Signup />
+				<div className='social_link_container'>
+					{socialLinks.map((link, index) => {
+						return (
+							<a
+								style={{ order: link.position }}
+								href={link.url}
+								key={index}
+								target='_blank'
+								rel='noopener noreferrer'>
+								{link.icon ? link.icon : link.label}
+							</a>
+						);
+					})}
 				</div>
 			</div>
 		</div>
