@@ -23,8 +23,13 @@ const Carousel = ({ slides }) => {
 		x === 0 ? setX(-(slides.length - 1) * 100) : setX(x + 100);
 	};
 
+	const handleDotNav = (i) => {
+		setCurrentSlide(i);
+		setX(-(i * 100));
+	};
+
 	return (
-		<div className='container'>
+		<div className='container carousel'>
 			<div className='carousel_container'>
 				<div className='chevron arrow_left'>
 					<FaChevronLeft onClick={prevSlide} />
@@ -49,8 +54,8 @@ const Carousel = ({ slides }) => {
 							) : (
 								<iframe
 									src={item.url}
-									width='853'
-									height='400'
+									// width='640'
+									// height='359'
 									frameBorder='0'
 									allow='accelerometer; autoplay; clipboard-write; encrypted-media;'
 								/>
@@ -62,15 +67,16 @@ const Carousel = ({ slides }) => {
 						</motion.div>
 					);
 				})}
-				<ul className='carousel_dot_nav'>
+				<div className='carousel_dot_nav'>
 					{Array.from({ length: slides.length }).map((_, index) => {
 						return (
 							<li
 								className={index === currentSlide ? `active` : null}
-								key={index}></li>
+								key={index}
+								onClick={() => handleDotNav(index)}></li>
 						);
 					})}
-				</ul>
+				</div>
 			</div>
 		</div>
 	);
