@@ -7,6 +7,7 @@ import { useState } from 'react';
 const Signup = () => {
 	const [email, setEmail] = useState('');
 
+	// Handle form submit with basic validation
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
