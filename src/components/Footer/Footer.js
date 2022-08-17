@@ -10,7 +10,7 @@ import Signup from '../Signup/Signup';
 
 const footer = ({ title }) => {
 	return (
-		<div className='container'>
+		<footer className='container'>
 			<h2 className='section_title'>{title}</h2>
 			<div className='footer_content'>
 				<div className='store_btn_wrap'>
@@ -37,7 +37,7 @@ const footer = ({ title }) => {
 					})}
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 };
 
