@@ -13,6 +13,8 @@
 			-webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
 			-moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
 			box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+			position: relative;
+			z-index: 2;
 
 			&:not(:last-of-type) {
 				margin-bottom: 2rem;

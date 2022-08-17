@@ -1,14 +1,11 @@
 header {
-	background-image: url('../../images/header_bg.jpg');
-	background-position: center top;
-	background-repeat: no-repeat;
 	position: relative;
 	text-transform: uppercase;
 
 	.header_snipe {
 		position: absolute;
-		top: 6rem;
-		left: -7rem;
+		top: 0;
+		left: -7.5rem;
 		padding: 2rem 8rem;
 		transform: rotate(-35deg);
 		background: #8ac6e5;

@@ -1,13 +1,21 @@
+.header {
+	background-image: url('./images/header_bg.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
 .carousel {
 	background-color: var(--light-purple);
 }
 
 .faq {
 	background-color: var(--dark-purple);
+	padding-bottom: 0;
 }
 
 .footer {
 	background-image: url(images/footer_bg.jpg);
 	background-size: cover;
 	background-position: center center;
+	margin-top: -2rem;
 }

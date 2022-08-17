@@ -1,0 +1,32 @@
+.signup_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+
+	h3 {
+		margin-bottom: 1.5rem;
+		font-weight: var(--fw-400);
+	}
+
+	form {
+		width: 50rem;
+		height: 4rem;
+		display: flex;
+
+		input {
+			width: 80%;
+			background-color: transparent;
+			border: 3px solid var(--al-teal);
+			padding-left: 1rem;
+			color: var(--white);
+		}
+
+		button {
+			width: 20%;
+			background-color: var(--al-teal);
+			border: 3px solid var(--al-teal);
+		}
+	}
+}
