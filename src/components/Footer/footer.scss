@@ -1,10 +1,14 @@
-.footer {
+footer {
 	background-image: url(../../images/footer_bg.jpg);
 	background-size: cover;
 	background-position: center center;
 	margin-top: -2rem;
 	padding: var(--pad-tb-6);
 	padding-bottom: 2rem;
+
+	.section_title {
+		margin-bottom: 1rem;
+	}
 
 	.footer_content {
 		display: flex;
