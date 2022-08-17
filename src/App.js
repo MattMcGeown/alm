@@ -15,15 +15,17 @@ import Footer from './components/Footer/Footer';
 function App() {
 	return (
 		<div className='app'>
-			<Header />
+			<section className='header'>
+				<Header />
+			</section>
 			<section className='carousel'>
 				<Carousel slides={carouselData} />
 			</section>
 			<section className='faq'>
 				<Accordion title='Frequently Asked Questions' data={faqData} />
-			</section>
-			<section className='footer'>
-				<Footer title='Play for free' />
+				<section className='footer'>
+					<Footer title='Play for free' />
+				</section>
 			</section>
 		</div>
 	);
