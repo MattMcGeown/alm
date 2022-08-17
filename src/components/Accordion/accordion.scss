@@ -1,8 +1,12 @@
-.container {
-	padding-top: 0;
+.accordion {
+	background-color: var(--dark-purple);
+	padding: var(--pad-tb-6);
+	padding-bottom: 0;
+}
 
+.container {
 	.accordion_container {
-		width: 60%;
+		width: 60vw;
 		margin: 0 auto;
 		margin-top: 2rem;
 
@@ -32,6 +36,14 @@
 			.accordion_item_content {
 				overflow: hidden;
 			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		.accordion_container {
+			width: 90vw;
 		}
 	}
 }
