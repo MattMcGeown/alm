@@ -20,7 +20,6 @@ const Accordion = ({ title, data }) => {
 			<h2 className='section_title'>{title}</h2>
 			<div className='accordion_container'>
 				{data.map((item, index) => {
-					console.log(item);
 					return (
 						<div className='accordion_item' key={index}>
 							<div
