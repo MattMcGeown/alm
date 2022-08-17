@@ -4,7 +4,8 @@ header {
 	background-image: url('../../images/header_bg.jpg');
 	background-position: center top;
 	background-repeat: no-repeat;
-	padding: 6rem 0;
+	background-size: cover;
+	padding: var(--pad-tb-6);
 
 	.header_snipe {
 		position: absolute;
