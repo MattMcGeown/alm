@@ -66,7 +66,7 @@ const Carousel = ({ slides }) => {
 					{Array.from({ length: slides.length }).map((_, index) => {
 						return (
 							<li
-								className={index === currentSlide && `active`}
+								className={index === currentSlide ? `active` : null}
 								key={index}></li>
 						);
 					})}
